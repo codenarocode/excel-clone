@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Excel Sheet</title>
+</head>
+<body>
+    <div class="page-actions-cont">
+        <div class="page-action ">Home</div>
+        <div class="page-action current">File</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+    </div>
+    <div class="cellprop-actions-cont">
+        <span class="material-icons copy">
+            content_copy
+        </span>
+        <span class="material-icons cut">
+            content_cut
+        </span>
+        <span class="material-icons paste">
+            content_paste
+        </span>
+        <select class="font-family-prop">
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans Serif</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="cursive">Cursive</option>
+            <option value="serif" selected>Serif</option>
+        </select>
+        <select class="font-size-prop">
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16" selected>16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="22">22</option>
+            <option value="24">24</option>
+            <option value="26">26</option>
+        </select>
+        <span class="material-icons bold">
+            format_bold
+        </span>
+        <span class="material-icons italic">
+            format_italic
+        </span>
+        <span class="material-icons underline">
+            format_underlined
+        </span>
+        <span class=" left material-icons alignment">
+            format_align_left
+        </span>
+        <span class=" center material-icons alignment">
+            format_align_center
+        </span>
+        <span class=" right material-icons alignment">
+            format_align_right
+        </span>
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_text
+            </span>
+            <input type="color" class="font-color-prop">
+        </div>
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_fill
+            </span>
+            <input type="color" class="bg-color-prop">
+        </div>
+        <span class=" material-icons download">
+            cloud_download
+        </span>
+        <span class=" material-icons upload">
+            cloud_upload
+        </span>
+     
+    </div>
+    <div class="formula-actions-cont">
+        <input type="text" readonly class="address-bar">
+        <img class="formula-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYElEQVR4nO2ab2hPURjHP5MZe2GbP2W0jSik/CdTyp83Fq8o4oU3RknyxpqWWBSRZqUpLwgvlhT5VxpjXjCJQmISzYwhkjGbmW069dw6PZ1tv/3uvXVv/T51ar/fOec5z/d3zz33eZ47SJEituQApUA98B3oABqAQ0A2MWET8AP4DGwAxgOLgBagF3gBjCTCpAFHxdlfwHSrbxzQJH2mHSbCHLAc3aH6rlt9pr0lohQBPeJkM5Cu+tuUkN9EkLHAJ8vJ3Y4xt5SQm0SQc5aDncBox5gCcd7cOzVAPhFjDtBtCblITKlRW2YtMWSmdYN7R+4IYsgZdTWqiSGZwE8lZA0xZL0S8U/iq9hxWQl5SAzJAf4oIQeJMEuVs8m0OofdIcA24Ln8IM1ARQIR8WrgvYw3IVHC1AUgxPwYNsMdAWSvNJO7DO3DlxUSNXhjjSDffFAOvB7E3LMDCN/smDMbaFXjfAvJcyx+PsG5G2X8R6AQGAXsV7beqDkTrYTsjggwbaVfIescQkoSmJctKe9fiQhsHil7M+T7McAr+a4WGEaAVDiEmP07EOUyttLRV6Ls7ZIH7gP5/CSM1Ngz7rWeBB+ERsgNYJKjr1DZNIfBVfm7EcgNWkSG4/kRRMqaCXQ5rvRXYCohsMCx2IWAbD9TdtuBxYREsUOIK61NhtPKbhkhctwhZFlAtsuV3ZOEyD21WHdAp8lCR5XlMSEW33T+YWIlv0wDvjmudKccLoEzxbHYCZ82c+V47QWuOEpG8x1zJssxbrZiUnjhRVCFBrMln4qd+5Lrlyn7Ox3zqqRvb7ILVzruD1f9KhFMqHFb7JgKvWdnriMa1qWnLtmKSd+b9WoREx8NhlUSNTdL8OcFj6ZwZ9+HzWqdfRJcLrGqmSbeS4p0eb8x2EDRRjtowvJZjnGlA4T5p/DBPMe2yvMhxJxIy/sYl+GIhr12ye9Jtl0ZvJuEjSIR8062WX9kAcdkfIccCsWy9XxRrYRsIYakqW3xRaLVSFEgmVebPIzy+8iXwwgSA6U2gZcve1TuEckidbsSYq6M3lYNViboO+EPi0Yl5Fo/hQbzYIosRyxHm+QVske+VYapCuLoC5Ms4KU42yJFgAkSIDbJm9etxIQc+beKBnn4tEplvTyM6kWKFMSD/z23n/HoQEp2AAAAAElFTkSuQmCC">
+        <input type="text" class="formula-bar">
+    </div>
+    <div class="grid-cont">
+        <div class="top-left-dummy-box"></div>
+        <div class="address-col-cont"></div>
+        <div class="cells-cont">
+            <div class="address-row-cont"></div>
+        </div>
+    </div>
+    <div class="sheet-actions-cont">
+        <div class="sheet-add-icon">
+            <span class="material-icons">
+                post_add
+            </span>
+        </div>
+      
+        <div class="sheet-folder-cont">
+        
+        </div>
+    </div>
+
+    <script src="grid.js"></script>
+    <script src="cyclicPathTrace.js"></script>
+    <script src ="cycleValidation.js"></script>
+    <script src="sheetsHandling.js"></script>
+    <script src="cell-properties.js"></script>
+    <script src="formula.js" ></script>
+    <script src="cutCopyPaste.js"></script>
+    <script src="openSave.js"></script>
+
+    
+    
+</body>
+</html>
